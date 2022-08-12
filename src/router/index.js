@@ -1,11 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CardView from '@/views/CardView.vue';
+import EditorView from '@/views/EditorView.vue';
+import ShowEditor from '@/views/ShowEditor.vue';
+import VueThree from '@/views/VueThree.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/vue',
+    name: "VueThree",
+    component: VueThree
+  },
+  {
+    path: '/show',
+    name: 'Show',
+    component: ShowEditor
+  },
+  {
+    path: '/editor',
+    name: 'Editor',
+    component: EditorView
+  },
+  {
+      path: '/card',
+      name: "Card",
+      component: CardView
   },
   {
     path: '/about',
